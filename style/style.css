@@ -1,0 +1,355 @@
+/* 
+#333333: Gris oscuro
+#FFFFFF: Blanco
+#E1F4F3: Celeste
+#706C61: Gris claro
+*/
+
+/* ------------------------------------------------------------------HEADER--------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body {
+    font-family:'Noto Serif', serif; 
+}
+
+header {
+    background-color: #333333;
+}
+
+header img {
+    width: 10%;
+    height: 10%;        
+}
+
+h1 { 
+    color: #E1F4F3;
+    font-size: 3rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 2rem;
+}
+h3{
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+/* -----------------------------------------------MAIN----------------------------------------------------------------------------- */
+
+main{ 
+    background-color:#706C61;
+}
+/* hacer todo denuevo */
+
+/* ------------HEADER------- */
+
+.navbar{
+    background-color: #333333;
+}
+.navbar a{
+    color: #E1F4F3;
+}
+
+.navbar-brand{
+    color: #E1F4F3;
+    padding: 1rem;
+}
+
+
+/*---------------------------Main index ------------------------------- */
+
+/* .navigator {
+    width: 100%;
+    display: flex;
+}
+.productos-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+}
+
+.li-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.items img {
+    object-fit: cover;
+    width: 50%;
+    
+}
+.items {
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.column-container{
+    position: relative;
+}
+.pages-link img{
+    width: 70%;
+    position: absolute;
+}
+.pages-link img:hover{
+    filter: blur(2px);
+}
+
+/*---------------------------pulseras ------------------------------- */
+
+.pulseras-container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+    grid-template-columns: repeat(5,18%);
+    grid-template-rows: 300px 50px;
+    grid-template-areas:
+    "img-1  img-2   img-3   img-4   img-5" 
+    "description-1  description-2   description-3   description-4   description-5"
+    ;
+}
+.image-1{
+    grid-area: img-1;
+}
+
+.image-2{
+    grid-area: img-2;
+}
+
+.image-3{
+    grid-area: img-3;
+}
+
+.image-4{
+    grid-area: img-4;
+}
+
+.image-5{
+    grid-area: img-5;
+}
+
+.item-description1{
+    grid-area: description-1;
+}
+
+.item-description2{
+    grid-area: description-2;
+}
+
+.item-description3{
+    grid-area: description-3;
+}
+
+.item-description4{
+    grid-area: description-4;
+}
+
+.item-description5{
+    grid-area: description-5;
+}
+
+.pulseras-container img{
+    width: 60%;
+}
+
+.pulseras-container p{
+    text-align: center;
+    color: #E1F4F3;
+}
+/*---------------------------collares-------------------------------*/
+.container-collares img{
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.container-collares p{
+    font-size: 1rem;
+    color: #E1F4F3;
+}
+
+/*----------------------------anillos--------------------------------------------- */
+
+/* pedientes */
+
+.pendiente img{
+    width: 20%;
+    height: 20%;
+}
+section h4 {
+     color: #FFFFFF;
+}
+.footer p {
+    text-align: center;
+}
+.footer{
+    background-color: #333333;
+    color: #E1F4F3;
+}
+.footer a{
+    color: blue;
+}
+.footer ul{ 
+    text-align: center;
+    list-style: none;
+}
+
+/*-------------------- MOBILE (GRID PULSERAS)---------------- */
+
+@media only screen and (max-width: 767px){
+    .pulseras-container{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: stretch;
+        grid-template-columns: repeat(1,50%);
+        grid-template-rows: 300px 50px 300px 50px 300px 50px 300px 50px 300px 50px;
+        grid-template-areas:
+        "img-1" 
+        "description-1"
+        "img-2"
+        "description-2"
+        "img-3"
+        "description-3"
+        "img-4"
+        "description-4"
+        "img-5"
+        "description-5"
+        ;
+    }
+    .image-1{
+        grid-area: img-1;
+    }
+    
+    .image-2{
+        grid-area: img-2;
+    }
+    
+    .image-3{
+        grid-area: img-3;
+    }
+    
+    .image-4{
+        grid-area: img-4;
+    }
+    
+    .image-5{
+        grid-area: img-5;
+    }
+    
+    .item-description1{
+        grid-area: description-1;
+    }
+    
+    .item-description2{
+        grid-area: description-2;
+    }
+    
+    .item-description3{
+        grid-area: description-3;
+    }
+    
+    .item-description4{
+        grid-area: description-4;
+    }
+    
+    .item-description5{
+        grid-area: description-5;
+    }
+    
+    .pulseras-container img{
+        width: 60%;
+    }
+    
+    .pulseras-container p{
+        text-align: center;
+        color: #E1F4F3;
+    }
+}
+
+/* -------MEDIA (TABLET PULSERAS)----------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .pulseras-container{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: stretch;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: 300px 50px 300px 50px 300px 50px;
+        grid-template-areas:
+        "img-1  img-2" 
+        "description-1  description-2"
+        "img-3  img-4"
+        "description-3  description-4"
+        "img-5  none"
+        "description-5  none"
+        ;
+    }
+    .image-1{
+        grid-area: img-1;
+    }
+    
+    .image-2{
+        grid-area: img-2;
+    }
+    
+    .image-3{
+        grid-area: img-3;
+    }
+    
+    .image-4{
+        grid-area: img-4;
+    }
+    
+    .image-5{
+        grid-area: img-5;
+    }
+    
+    .item-description1{
+        grid-area: description-1;
+    }
+    
+    .item-description2{
+        grid-area: description-2;
+    }
+    
+    .item-description3{
+        grid-area: description-3;
+    }
+    
+    .item-description4{
+        grid-area: description-4;
+    }
+    
+    .item-description5{
+        grid-area: description-5;
+    }
+    
+    .pulseras-container img{
+        width: 60%;
+    }
+    
+    .pulseras-container p{
+        text-align: center;
+        color: #E1F4F3;
+    }
+}
+
