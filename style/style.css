@@ -22,6 +22,8 @@ body {
 
 header {
     background-color: #333333;
+    position: sticky;
+    top: 0px;
 }
 
 header img {
@@ -42,8 +44,11 @@ h2 {
 }
 h3{
     font-size: 1rem;
-    color: #FFFFFF;
     text-align: center;
+}
+
+.btn p{
+    color: #E1F4F3;
 }
 /* -----------------------------------------------MAIN----------------------------------------------------------------------------- */
 
@@ -101,78 +106,22 @@ main{
     flex-wrap: wrap;
 } */
 
-.column-container{
-    position: relative;
-}
 .pages-link img{
     width: 70%;
-    position: absolute;
 }
 .pages-link img:hover{
     filter: blur(2px);
 }
-
 /*---------------------------pulseras ------------------------------- */
-
-.pulseras-container{
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: stretch;
-    grid-template-columns: repeat(5,18%);
-    grid-template-rows: 300px 50px;
-    grid-template-areas:
-    "img-1  img-2   img-3   img-4   img-5" 
-    "description-1  description-2   description-3   description-4   description-5"
-    ;
-}
-.image-1{
-    grid-area: img-1;
+.container-pulseras img{
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
 }
 
-.image-2{
-    grid-area: img-2;
-}
-
-.image-3{
-    grid-area: img-3;
-}
-
-.image-4{
-    grid-area: img-4;
-}
-
-.image-5{
-    grid-area: img-5;
-}
-
-.item-description1{
-    grid-area: description-1;
-}
-
-.item-description2{
-    grid-area: description-2;
-}
-
-.item-description3{
-    grid-area: description-3;
-}
-
-.item-description4{
-    grid-area: description-4;
-}
-
-.item-description5{
-    grid-area: description-5;
-}
-
-.pulseras-container img{
-    width: 60%;
-}
-
-.pulseras-container p{
-    text-align: center;
+.container-pulseras p{
     color: #E1F4F3;
+    font-size: 1rem;
 }
 /*---------------------------collares-------------------------------*/
 .container-collares img{
@@ -187,31 +136,43 @@ main{
 }
 
 /*----------------------------anillos--------------------------------------------- */
-
-/* pedientes */
-
-.pendiente img{
-    width: 20%;
-    height: 20%;
+.anillos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-section h4 {
-     color: #FFFFFF;
+.anillos-container img{
+    padding: 0,5rem;
+    width: 30%;
 }
-.footer p {
-    text-align: center;
+.anillos-container p{
+    color: #E1F4F3;
+    font-size: 1rem;
 }
-.footer{
-    background-color: #333333;
+/* ---------------PENDIENTES--------------------- */
+.container-pendientes img{
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+}
+.container-pendientes p{
+    font-size: 1rem;
     color: #E1F4F3;
 }
-.footer a{
-    color: blue;
+
+/* -----------------FOOTER---------------- */
+footer{
+    background-color: #333333;
 }
-.footer ul{ 
+footer p{
+    text-align: center;
+    color: #E1F4F3;
+}
+footer li{
     text-align: center;
     list-style: none;
 }
-
 /*-------------------- MOBILE (GRID PULSERAS)---------------- */
 
 @media only screen and (max-width: 767px){
