@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
+    <!-- Fonts titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Noto+Serif:wght@300&family=REM&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,57 +38,99 @@
             </div>
           </nav>
     </header>
-    <!--Banner para ir a tiendas.html-->
     <main>
-      <section class="banner-tienda">
-        <p>Visita nuestra tienda</p>
-        <input type="button" value="" placeholder="Tienda">
-        <a href="./pages/tienda.html">Tienda</a>
+      <section class="title-description">
+         <p>Shop online | Envios a todo el país</p>
       </section>
-      <section class="subtitle-container">
-          <h2 class="subtitle-items">Joyas en Plata 925</h2>
-          <h3 class="subtitle-items">Productos</h3>
-      </section>
+      <section class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./multimedia/anillo-product.jpg" class="d-block w-100" alt="Anillos">
+            </div>
+            <div class="carousel-item">
+              <img src="./multimedia/carboldvida-product.jpg" class="d-block w-100" alt="collares">
+            </div>
+            <div class="carousel-item">
+              <img src="./multimedia/espiralpuls-product.jpg" class="d-block w-100" alt="pulseras">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <nav class="tienda-btn">
+            <a href="./pages/tienda.html"><button>Ver Tienda</button></a>
+          </nav>
+        </section>
       <!-- ----------------------Iconos-------------------- -->
         <div class="container text-center">
             <div class="row align-items-center">
-              <div class="column-container col-12 col-sm-6 col-md-3">
+              <div class="column-container1 col-12 col-sm-6 col-md-3">
                 <a class="pages-link" href="./pages/anillos.html"><img src="./multimedia/anilllos-icono.png" alt="anillos"></a>
-                <p class="item-description">Anillos</p>
               </div>
               <div class="column-container col-12 col-sm-6 col-md-3">
                 <a class="pages-link" href="./pages/collares.html"><img src="./multimedia/collares-icono.png" alt="collares"></a>
-                <p class="item-description">Collares</p>
               </div>
                 <div class="column-container col-12 col-sm-6 col-md-3">
-                <a class="pages-link" href="./pages/pendientes.html"><img src="./multimedia/pendientes-icono.png" alt="pendientes"></a>
-                <p class="item-description">Pendientes</p>
+                  <a class="pages-link" href="./pages/pendientes.html"><img src="./multimedia/pendientes-icono.png" alt="pendientes"></a>
               </div>
               <div class="column-container col-12 col-sm-6 col-md-3">
                 <a class="pages-link" href="./pages/pulseras.html"><img src="./multimedia/pulseras-icono.png" alt="pulseras"></a>
-                <p class="item-description">Pulseras</p>
               </div>
             </div>
           </div>
     <!-- MAPA, mas adelante borrar formularios -->
         <section class="map-container">
-            <h4>¿Donde podes encontrarnos?</h4>
+            <h4 class="map">¿Donde podes encontrarnos?</h4>
             <iframe class="map-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13095.250346262575!2d-56.21640263873851!3d-34.86093616580733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d5313378cf9d%3A0xd7ba0e0f66e554fb!2sPrado%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1691368121058!5m2!1ses-419!2suy" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section class="despedida-container">
+          <p>VANTA<br>¡Gracias por elegirnos!</p>
+        </section>
     </main>
-    <!-- formulario para contactarse -->
-    <footer class="footer">
-        <label for="textarea">Comentarios</label>
-        <form action="form.php">
-            <textarea name="deja tu comentario" id="" cols="30" rows="10"></textarea>
-        </form>
-        <form action="form.php"><input type="submit" value="confirmar"></form>
-        <nav>
-            <p>Contactanos:</p>
-            <ul>    
-                <li><a href="https://www.instagram.com/vanta.uy/">Instagram</a></li>
+    <footer class="footer-container">
+      <!-- formulario para contactarse -->
+      <section class="footer-iconos">
+        <div class="contacto-icono">
+          <nav>
+            <img class="vanta-marca" src="./multimedia/Vanta-marca-footer.png" alt="icono">
+            <h5>Vanta.uy <br>Montevideo, Uruguay</h5>
+              <a href="https://www.instagram.com/vanta.uy/"><img src="./multimedia/instalogo.png" alt="instagram"></a>
+              <a href=""><img src="./multimedia/facelogo.png" alt="facebook"></a>
+              <a href=""><img src="./multimedia/whatspplogo.png" alt="whatsapp"></a>
+          </nav>
+        </div>
+        <div class="atencion-al-cliente"> 
+          <nav>
+            <p>Atencion al cliente</p>
+            <ul>
+              <li>
+                <a href="./pages/atencion-al-cliente.html">Cambios y devoluciones</a>
+              </li>
+              <li>
+                <a href="./pages/atencion-al-cliente.html">Envios y entregas</a>
+              </li>
+              <li>
+                <a href="./pages/atencion-al-cliente.html">Guia de talles</a>
+              </li>
+              <li>
+                <a href="./pages/atencion-al-cliente.html">¿Como cuidar mis joyas?</a>
+              </li>
             </ul>
-        </nav>
+          </nav>
+        </div> 
+      </section>
     </footer>
     <!-- boostrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
