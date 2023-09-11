@@ -168,6 +168,10 @@ main{
     font-size: 1rem;
     color: #E1F4F3;
 }
+.page-description{
+    letter-spacing: 4px;
+    font-family: "M PLUS Rounded 1c";
+}
 /* ----Pre footer------ */
 
 .despedida-container{
