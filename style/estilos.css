@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  background-color: #000000;
+  width: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+h1 {
+  color: #000000;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c";
+}
+
+h2 {
+  font-size: 2rem;
+  color: #E1F4F3;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c";
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h5 {
+  color: #FFFFFF;
+}
+
+.btn p {
+  color: #E1F4F3;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #000000;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+}
+.navbar a {
+  color: #000000;
+}
+
+.navbar-brand {
+  color: #E1F4F3;
+  padding: 1rem;
+}
+
+.title-description {
+  color: #FFFFFF;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  font-family: "M PLUS Rounded 1c";
+  text-align: center;
+  padding-top: 2%;
+}
+
+.tienda-btn {
+  padding: 1rem;
+}
+.tienda-btn a {
+  font-size: 1.5rem;
+  font-family: "M PLUS Rounded 1c";
+}
+.tienda-btn button {
+  color: #000000;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+  letter-spacing: 5px;
+}
+.tienda-btn button:hover {
+  opacity: 0.8;
+}
+
+.destacados-description {
+  font-size: 2rem;
+  font-family: "M PLUS Rounded 1c";
+  color: #FFFFFF;
+  text-align: center;
+  margin: 50px;
+}
+
+.destacados-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: baseline;
+}
+
+.destacados-item {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.destacados-item a {
+  object-fit: cover;
+}
+.destacados-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.destacados-item p {
+  color: #FFFFFF;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 5px;
+}
+.destacados-item img:hover {
+  opacity: 0.5;
+  transform: rotate(5deg);
+  transition: 600ms;
+}
+
+.carousel {
+  width: 40%;
+  padding-top: 50px;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pages-link img {
+  width: 70%;
+  object-fit: cover;
+  transition: 300ms;
+}
+.pages-link img:hover {
+  filter: blur(3px);
+}
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.map {
+  color: #FFFFFF;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.despedida-container {
+  background-color: #0C0C0C;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.despedida-container p {
+  color: #FFFFFF;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.page-description {
+  padding: 2%;
+  font-size: "M PLUS Rounded 1c";
+}
+
+.products-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: baseline;
+}
+
+.products-item {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.products-item a {
+  object-fit: cover;
+}
+.products-item img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+.products-item p {
+  color: #FFFFFF;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 5px;
+}
+.products-item img:hover {
+  opacity: 0.5;
+  transform: scale(0.98);
+  transition: 600ms;
+}
+
+.products1-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: baseline;
+}
+
+.products1-item {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.products1-item a {
+  object-fit: cover;
+}
+.products1-item img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+.products1-item p {
+  color: #FFFFFF;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 5px;
+}
+.products1-item img:hover {
+  opacity: 0.5;
+  transform: scale(0.98);
+  transition: 600ms;
+}
+
+footer {
+  background-color: #0C0C0C;
+  width: 100%;
+}
+footer p {
+  color: #E1F4F3;
+}
+footer li {
+  list-style: none;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto-icono {
+  width: 40%;
+}
+
+.atencion-al-cliente {
+  width: 20%;
+  padding-bottom: 1.5rem;
+}
+.atencion-al-cliente a {
+  opacity: 0.3;
+  color: #E1F4F3;
+  transition: 500ms;
+}
+.atencion-al-cliente li {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.atencion-al-cliente a:hover {
+  opacity: 1;
+}
+.atencion-al-cliente p {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.contacto-icono img {
+  width: 50px;
+  padding: 0.5rem;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-description p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-family: "M PLUS Rounded 1c";
+    text-align: center;
+    padding: 3% 3% 1%;
+  }
+  .tienda-btn {
+    padding: 1rem;
+  }
+  .tienda-btn a {
+    font-size: 1rem;
+    font-family: "M PLUS Rounded 1c";
+  }
+  .tienda-btn button {
+    color: #000000;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    letter-spacing: 4px;
+  }
+  .carousel {
+    width: 70%;
+    padding-top: 50px;
+    position: relative;
+  }
+  .map-item {
+    width: 80%;
+  }
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacto-icono {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .atencion-al-cliente {
+    width: 50%;
+    padding-bottom: 1.5rem;
+  }
+  .atencion-al-cliente p {
+    font-size: 1rem;
+  }
+  .product-image {
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+  }
+  .product-description {
+    font-size: 1rem;
+    color: #E1F4F3;
+  }
+  .destacados-container p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: "M PLUS Rounded 1c";
+  }
+  .destacados-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .destacados-item img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

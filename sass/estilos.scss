@@ -1,0 +1,70 @@
+
+// variables
+@import "partials/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+body {
+    font-family:'Noto Serif', serif; 
+    background-color: $negro;
+    width: 100%;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+h1 { 
+    color: $negro;
+    font-size: 3rem;
+    text-align: center;
+    font-family: $fontespecial;
+}
+h2 {
+    font-size: 2rem;
+    color: $claro;
+    text-align: center;
+    font-family: $fontespecial;
+}
+h3{
+    font-size: 1rem;
+    text-align: center;
+    color: $blanco;
+}
+h5{
+    color: $blanco;
+}
+.btn{
+    p{
+        color: $claro;
+    }
+}
+a{
+    text-decoration: none;
+}
+main{ 
+    background-color: $negro;
+}
+
+.navbar{
+    background-color: $blanco;
+    a{
+        color: $negro;
+    }
+}
+.navbar-brand{
+    color: $claro;
+    padding: 1rem;
+}   
+@import "partials/index";
+@import "partials/products";
+@import "partials/footer";
+
+@import "partials/mediasQ";
+//variables las declaro con $. por ejemplo $azul, y te traes el font o el color que quieras tener como variable

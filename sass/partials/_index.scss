@@ -1,0 +1,106 @@
+.title-description{
+    color: $blanco;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-family: $fontespecial;
+    text-align: center;
+    padding-top: 2%;
+}
+.tienda-btn{
+    padding: 1rem;
+        a{
+            font-size: 1.5rem;
+            font-family: $fontespecial;
+        }
+        button{
+            color: $negro;
+            background-color: $blanco;
+            opacity: calc(0.7);
+            letter-spacing: 5px;
+        }
+        button:hover{
+            opacity: calc(0.8);
+        }
+}
+.destacados-description{
+    font-size: 2rem;
+    font-family: $fontespecial;
+    color: $blanco;
+    text-align: center;
+    margin: 50px;
+}
+.destacados-container{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+        align-items: baseline;
+}
+.destacados-item{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+        a{
+            object-fit: cover;
+        }
+        img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+        p{
+            color: $blanco;
+            font-family: $fontespecial;
+            font-size: 1.3rem;
+            text-align: center;
+            padding-top: 5px;
+        }
+        img:hover{
+            opacity: calc(0.5);
+            transform: rotate(5deg);
+            transition: 600ms;
+        }
+}
+.carousel{
+    width: 40%;
+    padding-top: 50px;
+    position: relative;
+}
+.carousel-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pages-link{
+    img{
+        width: 70%;
+        object-fit: cover;
+        transition: 300ms;
+    }
+    img:hover{
+        filter: blur(3px);
+    }
+}
+.map-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+.map{
+    color: $blanco;
+    font-family: $fontespecial;
+}
+.despedida-container{
+    background-color: $gris;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        p{
+            color: $blanco;
+            font-size: 2rem;
+            letter-spacing: 10px;
+            text-align: center;
+            font-family: $fontespecial;
+        }
+}
