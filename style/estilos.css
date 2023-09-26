@@ -105,28 +105,21 @@ main {
 .destacados-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: baseline;
+  align-items: center;
 }
 
 .destacados-item {
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
 }
 .destacados-item a {
+  width: 100%;
   object-fit: cover;
 }
 .destacados-item img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 4/5;
   object-fit: cover;
-}
-.destacados-item p {
-  color: #FFFFFF;
-  font-family: "M PLUS Rounded 1c";
-  font-size: 1.3rem;
-  text-align: center;
-  padding-top: 5px;
 }
 .destacados-item img:hover {
   opacity: 0.5;
@@ -362,23 +355,6 @@ footer li {
   .product-description {
     font-size: 1rem;
     color: #E1F4F3;
-  }
-  .destacados-container p {
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-family: "M PLUS Rounded 1c";
-  }
-  .destacados-item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .destacados-item img {
-    width: 50%;
-    object-fit: cover;
   }
 }
 

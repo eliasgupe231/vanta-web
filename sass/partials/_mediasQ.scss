@@ -59,24 +59,4 @@
         font-size: 1rem;
         color: $claro;
     }
-
-    .destacados-container{
-        p{
-            text-align: center;
-            color: $blanco;
-            font-size: 1.5rem;
-            font-family: $fontespecial;
-        }
-    }
-    .destacados-item{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .destacados-item img{
-        width: 50%;
-        object-fit: cover;
-    }
 }

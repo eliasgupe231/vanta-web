@@ -30,28 +30,21 @@
     margin: 50px;
 }
 .destacados-container{
-        display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-        align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    align-items: center;
 }
 .destacados-item{
     width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-        a{
+    padding: 40px;
+        a{ 
+            width: 100%;
             object-fit: cover;
         }
         img{
             width: 100%;
-            aspect-ratio: 1/1;
+            aspect-ratio: 4/5;
             object-fit: cover;
-        }
-        p{
-            color: $blanco;
-            font-family: $fontespecial;
-            font-size: 1.3rem;
-            text-align: center;
-            padding-top: 5px;
         }
         img:hover{
             opacity: calc(0.5);
