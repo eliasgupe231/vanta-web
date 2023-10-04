@@ -30,7 +30,6 @@ h1 {
 h2 {
   font-size: 2rem;
   color: #E1F4F3;
-  text-align: center;
   font-family: "M PLUS Rounded 1c";
 }
 
@@ -74,7 +73,7 @@ main {
   letter-spacing: 0.5rem;
   font-family: "M PLUS Rounded 1c";
   text-align: center;
-  padding-top: 2%;
+  padding: 2% 5% 0 5%;
 }
 
 .tienda-btn {
@@ -89,6 +88,7 @@ main {
   background-color: #FFFFFF;
   opacity: 0.7;
   letter-spacing: 5px;
+  border-radius: 10px 10px 10px 10px;
 }
 .tienda-btn button:hover {
   opacity: 0.8;
@@ -124,7 +124,7 @@ main {
 .destacados-item img:hover {
   opacity: 0.5;
   transform: rotate(5deg);
-  transition: 600ms;
+  transition: 600;
 }
 
 .carousel {
@@ -159,6 +159,7 @@ main {
 .map {
   color: #FFFFFF;
   font-family: "M PLUS Rounded 1c";
+  text-align: center;
 }
 
 .despedida-container {
@@ -182,13 +183,14 @@ main {
 }
 
 .products-column {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .products-item {
-  width: 100%;
+  width: 25%;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -200,6 +202,11 @@ main {
   aspect-ratio: 4/5;
   object-fit: cover;
 }
+.products-item img:hover {
+  opacity: 0.5;
+  transform: scale(0.98);
+  transition: 600ms;
+}
 .products-item p {
   color: #FFFFFF;
   font-family: "M PLUS Rounded 1c";
@@ -207,47 +214,15 @@ main {
   text-align: center;
   padding-top: 5px;
 }
-.products-item img:hover {
-  opacity: 0.5;
-  transform: scale(0.98);
-  transition: 600ms;
-}
 
-.products1-column {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  align-items: baseline;
-}
-
-.products1-item {
-  width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.products1-item a {
-  object-fit: cover;
-}
-.products1-item img {
-  width: 100%;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-}
-.products1-item p {
-  color: #FFFFFF;
-  font-family: "M PLUS Rounded 1c";
-  font-size: 1.3rem;
+.page-description {
   text-align: center;
-  padding-top: 5px;
-}
-.products1-item img:hover {
-  opacity: 0.5;
-  transform: scale(0.98);
-  transition: 600ms;
 }
 
 footer {
   background-color: #0C0C0C;
   width: 100%;
+  z-index: 10;
 }
 footer p {
   color: #E1F4F3;
@@ -260,6 +235,7 @@ footer li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -268,7 +244,7 @@ footer li {
 }
 
 .atencion-al-cliente {
-  width: 20%;
+  width: 40%;
   padding-bottom: 1.5rem;
 }
 .atencion-al-cliente a {
@@ -276,12 +252,12 @@ footer li {
   color: #E1F4F3;
   transition: 500ms;
 }
+.atencion-al-cliente a:hover {
+  opacity: 1;
+}
 .atencion-al-cliente li {
   margin-top: 7px;
   margin-bottom: 7px;
-}
-.atencion-al-cliente a:hover {
-  opacity: 1;
 }
 .atencion-al-cliente p {
   font-size: 1.5rem;
@@ -300,7 +276,112 @@ footer li {
   padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+.pulserasPaging {
+  text-align: center;
+  padding-top: 2%;
+}
+.pulserasPaging a {
+  color: #FFFFFF;
+  font-family: "M PLUS Rounded 1c";
+}
+.pulserasPaging a:visited {
+  color: #ABB2B9;
+}
+
+.pulserasPage-container {
+  padding: 4rem;
+}
+
+.pulserasPage-item {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.pulserasPage-img {
+  width: 30%;
+  display: flex;
+}
+.pulserasPage-img img {
+  width: 100%;
+  aspect-ratio: 4/5;
+}
+
+.pulserasPage-title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2%;
+}
+.pulserasPage-title h2 {
+  letter-spacing: 3px;
+}
+.pulserasPage-title p {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  font-family: "M PLUS Rounded 1c";
+  font-style: italic;
+}
+.pulserasPage-title button {
+  width: 50%;
+  border-radius: 10px 10px 10px 10px;
+  color: #0C0C0C;
+  transition: 600ms;
+}
+.pulserasPage-title button:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.pulserasPage-description {
+  padding-top: 2%;
+  font-family: "M PLUS Rounded 1c";
+  color: #ABB2B9;
+}
+.pulserasPage-description ul {
+  list-style: none;
+  padding-left: 0%;
+}
+.pulserasPage-description .descriptionPulseras-title {
+  color: #FFFFFF;
+}
+.pulserasPage-description li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.pulserasRelacionados-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2%;
+}
+
+.pulserasRelacionados-item {
+  width: 100%;
+}
+.pulserasRelacionados-item a {
+  object-fit: cover;
+}
+.pulserasRelacionados-item a img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+.pulserasRelacionados-item a img:hover {
+  opacity: 0.5;
+  transform: scale(0.98);
+  transition: 600ms;
+}
+
+.pulserasRelacionados p {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 767px) {
   .title-description p {
     color: #FFFFFF;
     font-size: 1.5rem;
@@ -355,6 +436,40 @@ footer li {
   .product-description {
     font-size: 1rem;
     color: #E1F4F3;
+  }
+  .products-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .products-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .pulserasPage-container {
+    padding: 2rem;
+  }
+  .pulserasPage-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pulserasPage-img {
+    width: 100%;
+    display: flex;
+  }
+  .pulserasPage-img img {
+    width: 100%;
+    aspect-ratio: 4/5;
+  }
+  .pulserasPage-title {
+    width: 100%;
+    align-items: center;
+    padding: 5% 5%;
+  }
+  .pulserasPage-title button {
+    width: 100%;
   }
 }
 

@@ -7,30 +7,32 @@ footer{
         li{
             list-style: none;
         }
+    z-index: 10;
 }
 .footer-item{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .contacto-icono{
     width: 40%;
 }
 .atencion-al-cliente{
-    width: 20%;
+    width: 40%;
     padding-bottom: 1.5rem;
         a{
-            opacity: calc(0.3);
+            opacity: .3;
             color: $claro;
             transition: 500ms;
+                &:hover{
+                    opacity: 1;
+                }
         }
         li{
             margin-top: 7px;
             margin-bottom: 7px;
-        }
-        a:hover{
-            opacity: calc(1);
         }
         p{
             font-size: 1.5rem;

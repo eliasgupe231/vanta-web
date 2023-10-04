@@ -1,0 +1,100 @@
+.pulserasPaging{
+    text-align: center;
+    padding-top: 2%;
+        a{
+            color: $blanco;
+            font-family: $fontespecial;
+                &:visited{
+                    color: #ABB2B9;                    
+                }
+        }
+}
+
+.pulserasPage-container{
+    padding: 4rem;
+}
+.pulserasPage-item{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.pulserasPage-img{
+    width: 30%;
+    display: flex;
+    img{
+        width: 100%;
+        aspect-ratio: 4/5;
+    }
+}
+.pulserasPage-title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+        h2{
+            letter-spacing: 3px;
+        }
+        p{
+            font-size: 1.3rem;
+            color: $blanco;
+            font-family: $fontespecial;
+            font-style: italic;
+        }
+        button{
+            width: 50%;
+            border-radius: 10px 10px 10px 10px;
+            color: $gris;
+            transition: 600ms;
+                &:hover{
+                    color: $blanco;
+                    background-color: $negro;
+                }
+        }
+}
+.pulserasPage-description{
+    padding-top: 2%;
+    font-family: $fontespecial;
+    color: #ABB2B9;
+        ul{
+            list-style: none;
+            padding-left: 0%;
+        }
+        .descriptionPulseras-title{
+            color: $blanco;
+        }
+        li{
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+}
+.pulserasRelacionados-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2%;
+}
+.pulserasRelacionados-item{
+    width: 100%;
+    a{
+        object-fit: cover;
+            img{
+                width: 100%;
+                aspect-ratio: 4/5;
+                object-fit: cover;
+                &:hover{
+                    opacity: .5;
+                    transform: scale(0.98);
+                    transition: 600ms;
+                }
+            }
+    }
+    
+}
+.pulserasRelacionados{
+    p{
+        text-align: center;
+        color: $blanco;
+        font-family: $fontespecial;
+        font-size: 1.2rem;
+    }
+}

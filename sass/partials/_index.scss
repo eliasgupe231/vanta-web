@@ -4,7 +4,7 @@
     letter-spacing: 0.5rem;
     font-family: $fontespecial;
     text-align: center;
-    padding-top: 2%;
+    padding: 2% 5% 0 5%;
 }
 .tienda-btn{
     padding: 1rem;
@@ -15,11 +15,12 @@
         button{
             color: $negro;
             background-color: $blanco;
-            opacity: calc(0.7);
+            opacity:.7;
             letter-spacing: 5px;
-        }
-        button:hover{
-            opacity: calc(0.8);
+            border-radius: 10px 10px 10px 10px;
+                &:hover{
+                    opacity: .8;
+                }
         }
 }
 .destacados-description{
@@ -45,11 +46,11 @@
             width: 100%;
             aspect-ratio: 4/5;
             object-fit: cover;
-        }
-        img:hover{
-            opacity: calc(0.5);
-            transform: rotate(5deg);
-            transition: 600ms;
+                &:hover{
+                    opacity: .5;
+                    transform: rotate(5deg);
+                    transition: 600;    
+                }
         }
 }
 .carousel{
@@ -67,9 +68,9 @@
         width: 70%;
         object-fit: cover;
         transition: 300ms;
-    }
-    img:hover{
-        filter: blur(3px);
+            &:hover{
+                filter: blur(3px);
+            }
     }
 }
 .map-container{
@@ -82,6 +83,7 @@
 .map{
     color: $blanco;
     font-family: $fontespecial;
+    text-align: center;
 }
 .despedida-container{
     background-color: $gris;
