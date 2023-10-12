@@ -42,11 +42,9 @@
      width: 25%;
      padding-left: 40px;
      padding-right: 40px;
-         a{
-             object-fit: cover;
-         }
          img{
              width: 100%;
+             min-width: 100px;
              aspect-ratio: 4/5;
              object-fit: cover;
                 &:hover{
